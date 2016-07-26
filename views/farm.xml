@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
-        <!--- TODO [IMP] -->
+        <menuitem
+            id="menu_product_in_config_farm"
+            name="Farms"
+            parent="purchase.menu_purchase_config_purchase"
+            sequence="1"
+            action="farm_list_action"/>
     </data>
 </openerp>
