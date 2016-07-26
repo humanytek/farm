@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* farm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-26 17:19+0000\n"
+"PO-Revision-Date: 2016-07-26 17:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: farm
+#: model:ir.actions.act_window,help:farm.farm_list_action
+msgid "<p class=\"oe_view_nocontent_create\">Create the first farm\n"
+"                </p>\n"
+"            "
+msgstr "<p class=\"oe_view_nocontent_create\">Create the first farm\n"
+"                </p>\n"
+"            "
+
+#. module: farm
+#: field:farm,area:0
+msgid "Area"
+msgstr "Área"
+
+#. module: farm
+#: field:farm,city:0
+msgid "City"
+msgstr "Municipio"
+
+#. module: farm
+#: field:farm,coords:0
+msgid "Coords"
+msgstr "Coordenadas"
+
+#. module: farm
+#: field:farm,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: farm
+#: field:farm,create_date:0
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: farm
+#: field:farm,display_name:0
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: farm
+#: view:farm:farm.farm_form_view
+msgid "Farm Form"
+msgstr "Formulario de Predio"
+
+#. module: farm
+#: model:ir.actions.act_window,name:farm.farm_list_action
+#: model:ir.ui.menu,name:farm.menu_product_in_config_farm
+msgid "Farms"
+msgstr "Predios"
+
+#. module: farm
+#: field:farm,folio:0
+msgid "Folio"
+msgstr "Folio"
+
+#. module: farm
+#: field:farm,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: farm
+#: field:farm,id_farm:0
+msgid "Id farm"
+msgstr "Clave Predio"
+
+#. module: farm
+#: field:farm,__last_update:0
+msgid "Last Modified on"
+msgstr "Ultima modificación el"
+
+#. module: farm
+#: field:farm,write_uid:0
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: farm
+#: field:farm,write_date:0
+msgid "Last Updated on"
+msgstr "Ultima actualización el"
+
+#. module: farm
+#: field:farm,owner:0
+msgid "Owner"
+msgstr "Propietario"
