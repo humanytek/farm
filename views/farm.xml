@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
+        <record model="ir.ui.view" id="farm_form_view">
+            <field name="name">farm.form</field>
+            <field name="model">farm</field>
+            <field name="arch" type="xml">
+                <form string="Farm Form">
+                    <sheet>
+                        <group>
+                            <field name="id_farm"/>
+                            <field name="folio"/>
+                            <field name="owner"/>
+                            <field name="city"/>
+                            <field name="coords"/>
+                            <field name="area"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="farm_list_action">
+            <field name="name">Farms</field>
+            <field name="res_model">farm</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first farm
+                </p>
+            </field>
+        </record>
+
         <menuitem
             id="menu_product_in_config_farm"
             name="Farms"
