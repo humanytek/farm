@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="purchase_order_farm">
+            <field name="name">purchase.order.farm</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Farm">
+                        <group>
+                            <field name="farm_id"/>
+                            <field name="folio"/>
+                            <field name="owner"/>
+                            <field name="city"/>
+                            <field name="coords"/>
+                            <field name="area"/>
+                        </group>
+                        <group>
+                            <field name="hired_area"/>
+                            <field name="regime"/>
+                            <field name="expected_performance"/>
+                            <field name="validated_production"/>
+                            <field name="validated_year"/>
+                            <field name="annex_folio"/>
+                            <field name="client"/>
+                            <field name="ownership_type"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</openerp>
