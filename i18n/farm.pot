@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-26 17:18+0000\n"
-"PO-Revision-Date: 2016-07-26 17:18+0000\n"
+"POT-Creation-Date: 2016-07-27 15:43+0000\n"
+"PO-Revision-Date: 2016-07-27 15:43+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,38 +23,66 @@ msgid "<p class=\"oe_view_nocontent_create\">Create the first farm\n"
 msgstr ""
 
 #. module: farm
+#: field:purchase.order,annex_folio:0
+msgid "Annex folio"
+msgstr ""
+
+#. module: farm
 #: field:farm,area:0
+#: field:purchase.order,area:0
 msgid "Area"
 msgstr ""
 
 #. module: farm
 #: field:farm,city:0
+#: field:purchase.order,city:0
 msgid "City"
 msgstr ""
 
 #. module: farm
+#: field:purchase.order,client:0
+msgid "Client"
+msgstr ""
+
+#. module: farm
 #: field:farm,coords:0
+#: field:purchase.order,coords:0
 msgid "Coords"
 msgstr ""
 
 #. module: farm
-#: field:farm,create_uid:0
-msgid "Created by"
+#: selection:purchase.order,ownership_type:0
+msgid "Derivado"
 msgstr ""
 
 #. module: farm
-#: field:farm,create_date:0
-msgid "Created on"
+#: field:purchase.order,expected_performance:0
+msgid "Expected performance"
 msgstr ""
 
 #. module: farm
-#: field:farm,display_name:0
-msgid "Display Name"
+#: view:purchase.order:farm.purchase_order_farm
+msgid "Farm"
 msgstr ""
 
 #. module: farm
 #: view:farm:farm.farm_form_view
 msgid "Farm Form"
+msgstr ""
+
+#. module: farm
+#: field:farm,name:0
+msgid "Farm ID"
+msgstr ""
+
+#. module: farm
+#: view:farm:farm.farm_tree_view
+msgid "Farm Tree"
+msgstr ""
+
+#. module: farm
+#: field:purchase.order,farm_id:0
+msgid "Farm id"
 msgstr ""
 
 #. module: farm
@@ -65,7 +93,13 @@ msgstr ""
 
 #. module: farm
 #: field:farm,folio:0
+#: field:purchase.order,folio:0
 msgid "Folio"
+msgstr ""
+
+#. module: farm
+#: field:purchase.order,hired_area:0
+msgid "Hired area"
 msgstr ""
 
 #. module: farm
@@ -74,27 +108,49 @@ msgid "ID"
 msgstr ""
 
 #. module: farm
-#: field:farm,id_farm:0
-msgid "Id farm"
-msgstr ""
-
-#. module: farm
-#: field:farm,__last_update:0
-msgid "Last Modified on"
-msgstr ""
-
-#. module: farm
-#: field:farm,write_uid:0
-msgid "Last Updated by"
-msgstr ""
-
-#. module: farm
-#: field:farm,write_date:0
-msgid "Last Updated on"
-msgstr ""
-
-#. module: farm
 #: field:farm,owner:0
+#: field:purchase.order,owner:0
 msgid "Owner"
 msgstr ""
 
+#. module: farm
+#: field:purchase.order,ownership_type:0
+msgid "Ownership type"
+msgstr ""
+
+#. module: farm
+#: selection:purchase.order,ownership_type:0
+msgid "Propio"
+msgstr ""
+
+#. module: farm
+#: field:purchase.order,regime:0
+msgid "Regime"
+msgstr ""
+
+#. module: farm
+#: selection:purchase.order,regime:0
+msgid "Riego"
+msgstr ""
+
+#. module: farm
+#: selection:purchase.order,regime:0
+msgid "Temporal"
+msgstr ""
+
+#. module: farm
+#: code:addons/farm/models/farm.py:17
+#: sql_constraint:farm:0
+#, python-format
+msgid "The farm id must be unique"
+msgstr ""
+
+#. module: farm
+#: field:purchase.order,validated_production:0
+msgid "Validated production"
+msgstr ""
+
+#. module: farm
+#: field:purchase.order,validated_year:0
+msgid "Validated year"
+msgstr ""
