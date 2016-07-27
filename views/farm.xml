@@ -8,7 +8,7 @@
                 <form string="Farm Form">
                     <sheet>
                         <group>
-                            <field name="id_farm"/>
+                            <field name="name"/>
                             <field name="folio"/>
                             <field name="owner"/>
                             <field name="city"/>
@@ -17,6 +17,21 @@
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="farm_tree_view">
+            <field name="name">farm.tree</field>
+            <field name="model">farm</field>
+            <field name="arch" type="xml">
+                <tree string="Farm Tree">
+                    <field name="name"/>
+                    <field name="folio"/>
+                    <field name="owner"/>
+                    <field name="city"/>
+                    <field name="coords"/>
+                    <field name="area"/>
+                </tree>
             </field>
         </record>
 
