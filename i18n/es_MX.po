@@ -110,9 +110,9 @@ msgid "ID"
 msgstr "ID"
 
 #. module: farm
-#: field:farm,owner:0
-#: field:purchase.order,owner:0
-msgid "Owner"
+#: field:farm,farm_owner:0
+#: field:purchase.order,farm_owner:0
+msgid "Farm owner"
 msgstr "Propietario"
 
 #. module: farm

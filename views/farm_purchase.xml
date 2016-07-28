@@ -11,7 +11,7 @@
                         <group>
                             <field name="farm_id"/>
                             <field name="folio"/>
-                            <field name="owner"/>
+                            <field name="farm_owner"/>
                             <field name="city"/>
                             <field name="coords"/>
                             <field name="area"/>

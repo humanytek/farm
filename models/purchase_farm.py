@@ -6,7 +6,7 @@ class Farm(models.Model):
 
     farm_id = fields.Many2one('farm', required=True)
     folio = fields.Char(related="farm_id.folio", readonly=True)
-    owner = fields.Many2one('res.partner', related="farm_id.owner", readonly=True)
+    farm_owner = fields.Many2one('res.partner', related="farm_id.farm_owner", readonly=True)
     city = fields.Many2one('res.country.state.city', related="farm_id.city", readonly=True)
     coords = fields.Char(related="farm_id.coords", readonly=True)
     area = fields.Float(related="farm_id.area", readonly=True)
