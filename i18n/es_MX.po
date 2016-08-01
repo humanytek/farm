@@ -148,6 +148,11 @@ msgid "The farm id must be unique"
 msgstr "La clave del predio debe ser unica"
 
 #. module: farm
+#: field:purchase.order,tons_to_validate:0
+msgid "Tons to validate"
+msgstr "Toneladas a validar"
+
+#. module: farm
 #: field:purchase.order,validated_production:0
 msgid "Validated production"
 msgstr "Producción validada"
