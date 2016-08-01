@@ -19,6 +19,7 @@
                         <group>
                             <field name="hired_area" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                             <field name="expected_performance"/>
+                            <field name="tons_to_validate"/>
                             <field name="regime" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                             <field name="validated_production" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                             <field name="validated_year" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>

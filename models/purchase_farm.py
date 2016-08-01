@@ -13,6 +13,7 @@ class Farm(models.Model):
 
     hired_area = fields.Float()
     expected_performance = fields.Float(default=12)
+    tons_to_validate = fields.Float(compute="_get_tons_to_validate", store=False)
     regime = fields.Selection([
         ('riego', 'Riego'),
         ('temporal', 'Temporal'),
@@ -25,3 +26,7 @@ class Farm(models.Model):
         ('propio', 'Propio'),
         ('derivado', 'Derivado'),
     ])
+
+    @api.depends('hired_area', 'expected_performance')
+    def _get_tons_to_validate(self):
+        self.tons_to_validate = self.hired_area * self.expected_performance
