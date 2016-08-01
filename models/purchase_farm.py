@@ -15,8 +15,8 @@ class Farm(models.Model):
     regime = fields.Selection([
         ('riego', 'Riego'),
         ('temporal', 'Temporal'),
-    ], required=True)
-    expected_performance = fields.Float()
+    ], default='riego', required=True)
+    expected_performance = fields.Float(default=12)
     validated_production = fields.Float(required=True)
     validated_year = fields.Integer(size=4, required=True)
     annex_folio = fields.Integer(required=True)
