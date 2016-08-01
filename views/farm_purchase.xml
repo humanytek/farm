@@ -8,14 +8,7 @@
             <field name="arch" type="xml">
                 <notebook position="inside">
                     <page string="Farm">
-                        <group>
-                            <field name="farm_id" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="folio"/>
-                            <field name="farm_owner"/>
-                            <field name="city"/>
-                            <field name="coords"/>
-                            <field name="area"/>
-                        </group>
+                        <field name="farm_ids" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                         <group>
                             <field name="hired_area" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                             <field name="expected_performance"/>
