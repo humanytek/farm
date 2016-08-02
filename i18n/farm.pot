@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-27 15:43+0000\n"
-"PO-Revision-Date: 2016-07-27 15:43+0000\n"
+"POT-Creation-Date: 2016-08-02 13:57+0000\n"
+"PO-Revision-Date: 2016-08-02 13:57+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,46 +23,48 @@ msgid "<p class=\"oe_view_nocontent_create\">Create the first farm\n"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,annex_folio:0
+#: field:farm.area,annex_folio:0
 msgid "Annex folio"
 msgstr ""
 
 #. module: farm
 #: field:farm,area:0
-#: field:purchase.order,area:0
 msgid "Area"
 msgstr ""
 
 #. module: farm
 #: field:farm,city:0
-#: field:purchase.order,city:0
 msgid "City"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,client:0
+#: field:farm.area,client:0
 msgid "Client"
 msgstr ""
 
 #. module: farm
 #: field:farm,coords:0
-#: field:purchase.order,coords:0
 msgid "Coords"
 msgstr ""
 
 #. module: farm
-#: selection:purchase.order,ownership_type:0
+#: selection:farm.area,ownership_type:0
 msgid "Derivado"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,expected_performance:0
+#: field:farm.area,expected_performance:0
 msgid "Expected performance"
 msgstr ""
 
 #. module: farm
 #: view:purchase.order:farm.purchase_order_farm
 msgid "Farm"
+msgstr ""
+
+#. module: farm
+#: view:farm.area:farm.farm_area_tree_view
+msgid "Farm Area Tree"
 msgstr ""
 
 #. module: farm
@@ -81,8 +83,18 @@ msgid "Farm Tree"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,farm_id:0
+#: field:purchase.order,farm_area_ids:0
+msgid "Farm area ids"
+msgstr ""
+
+#. module: farm
+#: field:farm.area,farm_id:0
 msgid "Farm id"
+msgstr ""
+
+#. module: farm
+#: field:farm,farm_owner:0
+msgid "Farm owner"
 msgstr ""
 
 #. module: farm
@@ -93,48 +105,47 @@ msgstr ""
 
 #. module: farm
 #: field:farm,folio:0
-#: field:purchase.order,folio:0
 msgid "Folio"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,hired_area:0
+#: field:farm.area,hired_area:0
 msgid "Hired area"
 msgstr ""
 
 #. module: farm
 #: field:farm,id:0
+#: field:farm.area,id:0
 msgid "ID"
 msgstr ""
 
 #. module: farm
-#: field:farm,farm_owner:0
-#: field:purchase.order,farm_owner:0
-msgid "Farm owner"
+#: field:purchase.order,owner:0
+msgid "Owner"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,ownership_type:0
+#: field:farm.area,ownership_type:0
 msgid "Ownership type"
 msgstr ""
 
 #. module: farm
-#: selection:purchase.order,ownership_type:0
+#: selection:farm.area,ownership_type:0
 msgid "Propio"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,regime:0
+#: field:farm.area,regime:0
 msgid "Regime"
 msgstr ""
 
 #. module: farm
-#: selection:purchase.order,regime:0
+#: selection:farm.area,regime:0
 msgid "Riego"
 msgstr ""
 
 #. module: farm
-#: selection:purchase.order,regime:0
+#: selection:farm.area,regime:0
 msgid "Temporal"
 msgstr ""
 
@@ -146,16 +157,16 @@ msgid "The farm id must be unique"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,tons_to_validate:0
+#: field:farm.area,tons_to_validate:0
 msgid "Tons to validate"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,validated_production:0
+#: field:farm.area,validated_production:0
 msgid "Validated production"
 msgstr ""
 
 #. module: farm
-#: field:purchase.order,validated_year:0
+#: field:farm.area,validated_year:0
 msgid "Validated year"
 msgstr ""

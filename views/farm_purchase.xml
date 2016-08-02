@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
+        <record model="ir.ui.view" id="farm_area_tree_view">
+            <field name="name">farm.area.tree</field>
+            <field name="model">farm.area</field>
+            <field name="arch" type="xml">
+                <tree string="Farm Area Tree" editable="bottom">
+                    <field name="farm_id" required="1"/>
+                    <field name="hired_area" required="1"/>
+                    <field name="expected_performance"/>
+                    <field name="tons_to_validate" required="1"/>
+                    <field name="regime" required="1"/>
+                    <field name="validated_production" required="1"/>
+                    <field name="validated_year" required="1"/>
+                    <field name="annex_folio" required="1"/>
+                    <field name="client" required="1"/>
+                    <field name="ownership_type" required="1"/>
+                </tree>
+            </field>
+        </record>
+
         <record model="ir.ui.view" id="purchase_order_farm">
             <field name="name">purchase.order.farm</field>
             <field name="model">purchase.order</field>
@@ -8,18 +27,7 @@
             <field name="arch" type="xml">
                 <notebook position="inside">
                     <page string="Farm">
-                        <field name="farm_ids" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                        <group>
-                            <field name="hired_area" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="expected_performance"/>
-                            <field name="tons_to_validate"/>
-                            <field name="regime" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="validated_production" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="validated_year" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="annex_folio" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="client" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                            <field name="ownership_type" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
-                        </group>
+                        <field name="farm_area_ids" attrs="{'required':[('contract_type', 'in', ['axc'])]}"/>
                     </page>
                 </notebook>
             </field>
