@@ -22,6 +22,7 @@ class FarmArea(models.Model):
         ('derivado', 'Derivado'),
     ])
 
+    @api.one
     @api.depends('hired_area', 'expected_performance')
     def _get_tons_to_validate(self):
         self.tons_to_validate = self.hired_area * self.expected_performance
