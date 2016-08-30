@@ -8,7 +8,7 @@ class Farm(models.Model):
     folio = fields.Char(size=12, required=True)
     farm_owner = fields.Many2one('res.partner', required=True)
     city = fields.Many2one('res.country.state.city', required=True)
-    coords = fields.Char(required=True)
+    coords = fields.Char()
     area = fields.Float(required=True)
 
     _sql_constraints = [
