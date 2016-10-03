@@ -15,7 +15,7 @@ class FarmArea(models.Model):
     ], default='riego')
     validated_production = fields.Float()
     validated_year = fields.Integer(size=4)
-    annex_folio = fields.Integer()
+    annex_folio = fields.Char()
     client = fields.Many2one('res.partner')
     ownership_type = fields.Selection([
         ('propio', 'Propio'),
