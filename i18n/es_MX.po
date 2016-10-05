@@ -75,7 +75,7 @@ msgstr "Formulario de Predio"
 #. module: farm
 #: field:farm,name:0
 msgid "Farm ID"
-msgstr "Clave Predio"
+msgstr "Folio"
 
 #. module: farm
 #: view:farm:farm.farm_tree_view
@@ -90,7 +90,7 @@ msgstr "Claves de areas de predios"
 #. module: farm
 #: field:farm.area,farm_id:0
 msgid "Farm id"
-msgstr "Clave Predio"
+msgstr "Folio"
 
 #. module: farm
 #: field:farm,farm_owner:0
@@ -106,7 +106,7 @@ msgstr "Predios"
 #. module: farm
 #: field:farm,folio:0
 msgid "Folio"
-msgstr "Folio"
+msgstr "Clave del predio"
 
 #. module: farm
 #: field:farm.area,hired_area:0
@@ -154,7 +154,7 @@ msgstr "Temporal"
 #: sql_constraint:farm:0
 #, python-format
 msgid "The farm id must be unique"
-msgstr "La clave del predio debe ser unica"
+msgstr "El folio debe ser unico"
 
 #. module: farm
 #: field:farm.area,tons_to_validate:0
