@@ -38,6 +38,11 @@ msgid "City"
 msgstr ""
 
 #. module: farm
+#: field:farm.area,expiration:0
+msgid "Expiration"
+msgstr ""
+
+#. module: farm
 #: field:farm.area,client:0
 msgid "Client"
 msgstr ""

@@ -16,6 +16,7 @@ class FarmArea(models.Model):
     validated_production = fields.Float()
     validated_year = fields.Integer(size=4)
     annex_folio = fields.Char()
+    expiration = fields.Date()
     client = fields.Many2one('res.partner')
     ownership_type = fields.Selection([
         ('propio', 'Propio'),
